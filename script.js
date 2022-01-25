@@ -1,18 +1,10 @@
 const video = document.getElementById("video");
 
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri(
-    "https://github.com/nikhilmirpuri/moodposter/tree/master/models"
-  ),
-  faceapi.nets.faceLandmark68Net.loadFromUri(
-    "https://github.com/nikhilmirpuri/moodposter/tree/master/models"
-  ),
-  faceapi.nets.faceRecognitionNet.loadFromUri(
-    "https://github.com/nikhilmirpuri/moodposter/tree/master/models"
-  ),
-  faceapi.nets.faceExpressionNet.loadFromUri(
-    "https://github.com/nikhilmirpuri/moodposter/tree/master/models"
-  ),
+  faceapi.nets.tinyFaceDetector.loadFromUri("./moodposter/models"),
+  faceapi.nets.faceLandmark68Net.loadFromUri("./moodposter/models"),
+  faceapi.nets.faceRecognitionNet.loadFromUri("./moodposter/models"),
+  faceapi.nets.faceExpressionNet.loadFromUri("./moodposter//models"),
 ]).then(startVideo);
 
 function startVideo() {
