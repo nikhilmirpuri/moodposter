@@ -36,6 +36,18 @@ video.addEventListener("play", () => {
       });
       let emotion = sortable[6][0];
       document.getElementById("mood").innerHTML = emotion;
+
+      switch (emotion) {
+        case "happy":
+          document.getElementById("Background").style.fill = "yellow";
+          break;
+        case "sad":
+          document.getElementById("Background").style.fill = "blue";
+          break;
+        default:
+          document.getElementById("Background").style.fill = "black";
+          break;
+      }
     }
     const resizedDetections = faceapi.resizeResults(detections, displaySize);
     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
