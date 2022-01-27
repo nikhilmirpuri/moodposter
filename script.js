@@ -38,14 +38,23 @@ video.addEventListener("play", () => {
       document.getElementById("mood").innerHTML = emotion;
 
       switch (emotion) {
+        default:
+          document.getElementById("Background").style.fill = "white";
+          break;
         case "happy":
           document.getElementById("Background").style.fill = "yellow";
           break;
         case "sad":
           document.getElementById("Background").style.fill = "blue";
           break;
-        default:
-          document.getElementById("Background").style.fill = "black";
+        case "angry":
+          document.getElementById("Background").style.fill = "red";
+          break;
+                  case "surprised":
+          document.getElementById("Background").style.fill = "purple";
+          break;
+                  case "disgusted":
+          document.getElementById("Background").style.fill = "green";
           break;
       }
     }
