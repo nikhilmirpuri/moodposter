@@ -40,21 +40,31 @@ video.addEventListener("play", () => {
       switch (emotion) {
         default:
           document.getElementById("Background").style.fill = "white";
+          document.getElementById("emoji").innerHTML = "( ‾ ʖ̫ ‾)";
           break;
         case "happy":
           document.getElementById("Background").style.fill = "yellow";
+          document.getElementById("emoji").innerHTML = "(☝︎ ՞ਊ ՞)☝︎";
           break;
         case "sad":
           document.getElementById("Background").style.fill = "blue";
+          document.getElementById("emoji").innerHTML = "(  ꈨຶꎁꈨຶ )";
           break;
         case "angry":
           document.getElementById("Background").style.fill = "red";
+          document.getElementById("emoji").innerHTML = "ᕙ( ︡'︡益'︠)ง";
           break;
-                  case "surprised":
+        case "surprised":
           document.getElementById("Background").style.fill = "purple";
+          document.getElementById("emoji").innerHTML = "(╯°□°)╯";
           break;
-                  case "disgusted":
+        case "disgusted":
           document.getElementById("Background").style.fill = "green";
+          document.getElementById("emoji").innerHTML = "(╬⓪益⓪)";
+          break;
+        case "fearful":
+          document.getElementById("Background").style.fill = "orange";
+          document.getElementById("emoji").innerHTML = "(,,#ﾟДﾟ)";
           break;
       }
     }
