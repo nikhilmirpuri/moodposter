@@ -8,6 +8,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: black;
+  background-image:url(images/grass.gif);
+  background-size: cover;
 }
 
 h1 {
