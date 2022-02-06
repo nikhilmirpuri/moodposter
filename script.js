@@ -39,32 +39,123 @@ video.addEventListener("play", () => {
 
       switch (emotion) {
         default:
-          document.getElementById("Background").style.fill = "white";
-          document.getElementById("emoji").innerHTML = "( ‾ ʖ̫ ‾)";
+          //offwhite
+          document.getElementById("neutral").style.display = "block";
+          document.getElementById("happy").style.display = "none";
+          document.getElementById("sad").style.display = "none";
+          document.getElementById("angry").style.display = "none";
+          document.getElementById("surprised").style.display = "none";
+          document.getElementById("disgusted").style.display = "none";
+          document.getElementById("fearful").style.display = "none";
+
+          document.getElementById("face").style.fill = "#a09879";
+          document.getElementById("BACKGROUND").style.fill = "#a09879";
+          document.getElementById("neutral").style.fill = "#635d46";
+          document.getElementById("emoji").style.fill = "#635d46";
+          document.getElementById("emoji").innerHTML =
+            "(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;‾ ʖ̫ ‾&nbsp;)";
           break;
         case "happy":
-          document.getElementById("Background").style.fill = "yellow";
-          document.getElementById("emoji").innerHTML = "(☝︎ ՞ਊ ՞)☝︎";
+          //yellow
+          document.getElementById("neutral").style.display = "none";
+          document.getElementById("happy").style.display = "block";
+          document.getElementById("sad").style.display = "none";
+          document.getElementById("angry").style.display = "none";
+          document.getElementById("surprised").style.display = "none";
+          document.getElementById("disgusted").style.display = "none";
+          document.getElementById("fearful").style.display = "none";
+
+          document.getElementById("face").style.fill = "#fbd266";
+          document.getElementById("BACKGROUND").style.fill = "#fbd266";
+          document.getElementById("happy").style.fill = "#ce9705";
+          document.getElementById("emoji").style.fill = "#ce9705";
+          document.getElementById("emoji").innerHTML =
+            "(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;՞ਊ&nbsp;՞&nbsp;)";
+          //document.getElementById("emoji").innerHTML = "(☝︎ ՞ਊ ՞)☝︎";
           break;
         case "sad":
-          document.getElementById("Background").style.fill = "blue";
-          document.getElementById("emoji").innerHTML = "(  ꈨຶꎁꈨຶ )";
+          //blue
+          document.getElementById("neutral").style.display = "none";
+          document.getElementById("happy").style.display = "none";
+          document.getElementById("sad").style.display = "block";
+          document.getElementById("angry").style.display = "none";
+          document.getElementById("surprised").style.display = "none";
+          document.getElementById("disgusted").style.display = "none";
+          document.getElementById("fearful").style.display = "none";
+
+          document.getElementById("face").style.fill = "#669bc5";
+          document.getElementById("BACKGROUND").style.fill = "#669bc5";
+          document.getElementById("sad").style.fill = "#315e82";
+          document.getElementById("emoji").style.fill = "#315e82";
+          document.getElementById("emoji").innerHTML =
+            "(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ꈨຶꎁꈨຶ&nbsp;&nbsp;)";
           break;
         case "angry":
-          document.getElementById("Background").style.fill = "red";
-          document.getElementById("emoji").innerHTML = "ᕙ( ︡'︡益'︠)ง";
+          //red
+          document.getElementById("neutral").style.display = "none";
+          document.getElementById("happy").style.display = "none";
+          document.getElementById("sad").style.display = "none";
+          document.getElementById("angry").style.display = "block";
+          document.getElementById("surprised").style.display = "none";
+          document.getElementById("disgusted").style.display = "none";
+          document.getElementById("fearful").style.display = "none";
+
+          document.getElementById("face").style.fill = "#963d3d";
+          document.getElementById("BACKGROUND").style.fill = "#963d3d";
+          document.getElementById("angry").style.fill = "#5a2525";
+          document.getElementById("emoji").style.fill = "#5a2525";
+          document.getElementById("emoji").innerHTML =
+            "(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'益'︠&nbsp;&nbsp;)";
           break;
         case "surprised":
-          document.getElementById("Background").style.fill = "purple";
-          document.getElementById("emoji").innerHTML = "(╯°□°)╯";
+          //purple
+          document.getElementById("neutral").style.display = "none";
+          document.getElementById("happy").style.display = "none";
+          document.getElementById("sad").style.display = "none";
+          document.getElementById("angry").style.display = "none";
+          document.getElementById("surprised").style.display = "block";
+          document.getElementById("disgusted").style.display = "none";
+          document.getElementById("fearful").style.display = "none";
+
+          document.getElementById("face").style.fill = "#b07bac";
+          document.getElementById("BACKGROUND").style.fill = "#b07bac";
+          document.getElementById("surprised").style.fill = "#70436d";
+          document.getElementById("emoji").style.fill = "#70436d";
+          document.getElementById("emoji").innerHTML =
+            "(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;°□°&nbsp;)";
           break;
         case "disgusted":
-          document.getElementById("Background").style.fill = "green";
+          //green
+          document.getElementById("neutral").style.display = "none";
+          document.getElementById("happy").style.display = "none";
+          document.getElementById("sad").style.display = "none";
+          document.getElementById("angry").style.display = "none";
+          document.getElementById("surprised").style.display = "none";
+          document.getElementById("disgusted").style.display = "block";
+          document.getElementById("fearful").style.display = "none";
+
+          document.getElementById("face").style.fill = "#536B5B";
+          document.getElementById("BACKGROUND").style.fill = "#536B5B";
+          document.getElementById("disgusted").style.fill = "#324037";
+          document.getElementById("emoji").style.fill = "#324037";
           document.getElementById("emoji").innerHTML = "(╬⓪益⓪)";
           break;
         case "fearful":
-          document.getElementById("Background").style.fill = "orange";
-          document.getElementById("emoji").innerHTML = "(,,#ﾟДﾟ)";
+          //orange
+          document.getElementById("neutral").style.display = "none";
+          document.getElementById("happy").style.display = "none";
+          document.getElementById("sad").style.display = "none";
+          document.getElementById("angry").style.display = "none";
+          document.getElementById("surprised").style.display = "none";
+          document.getElementById("disgusted").style.display = "none";
+          document.getElementById("fearful").style.display = "block";
+
+          document.getElementById("face").style.fill = "#f4a454";
+          document.getElementById("BACKGROUND").style.fill = "#f4a454";
+          document.getElementById("fearful").style.fill = "#b9620c";
+          document.getElementById("emoji").style.fill = "#b9620c";
+          document.getElementById("emoji").innerHTML =
+            "(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#ﾟДﾟ&nbsp;)";
           break;
       }
     }
@@ -72,6 +163,6 @@ video.addEventListener("play", () => {
     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
     faceapi.draw.drawDetections(canvas, resizedDetections);
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
-    //faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
+    faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
   }, 100);
 });
