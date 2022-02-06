@@ -8,24 +8,60 @@ body {
   justify-content: center;
   align-items: center;
   background-color: black;
-  background-image:url(images/grass.gif);
+  background-image: url(images/grass.gif);
   background-size: cover;
 }
 
 @font-face {
-  font-family: 'Mess_Light';
-  src:    url('fonts/Mess-Light_web.eot');
-  src:    url('fonts/Mess-Light_web.eot?#iefix') format('embedded-opentype'),
-          url('fonts/Mess-Light_web.woff') format('woff'),
-          url('fonts/Mess-Light_web.woff2') format('woff2'),
-          url('fonts/Mess-Light_web.ttf') format('truetype'),
-          url('fonts/Mess-Light_web.svg#svgFontName') format('svg');
+  font-family: "Mess-Light";
+  src: url("fonts/Mess-Light_web.eot");
+  src: url("fonts/Mess-Light_web.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Mess-Light_web.woff") format("woff"),
+    url("fonts/Mess-Light_web.woff2") format("woff2"),
+    url("fonts/Mess-Light_web.ttf") format("truetype"),
+    url("fonts/Mess-Light_web.svg#svgFontName") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-#angry {
-  font-family: 'Mess_Light';
+@font-face {
+  font-family: "Malebolge-Adversarial";
+  src: url("fonts/Malebolge-Adversarial.eot");
+  src: url("fonts/Malebolge-Adversarial.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Malebolge-Adversarial.woff") format("woff"),
+    url("fonts/Malebolge-Adversarial.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avara-Bold";
+  src: url("fonts/Avara-Bold.eot");
+  src: url("fonts/Avara-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Avara-Bold.woff") format("woff"),
+    url("fonts/Avara-Bold.woff2") format("woff2"),
+    url("fonts/Avara-Bold.ttf") format("truetype"),
+    url("fonts/Avara-Bold_web.svg#svgFontName") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brassia-Regular";
+  src: url("fonts/Brassia-Regular.eot");
+  src: url("fonts/Brassia-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Brassia-Regular.woff") format("woff"),
+    url("fonts/Brassia-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lobular-Regular";
+  src: url("fonts/Lobular-Regular.eot");
+  src: url("fonts/Lobular-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Lobular-Regular.woff") format("woff"),
+    url("fonts/Lobular-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
